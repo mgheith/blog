@@ -20,11 +20,11 @@ Then /^It will the same text$/ do
 end
 
 When /^I type "(.*)@(.*)\.(.*)" into the expression field and "jdenen@cscc.edu" into the string field$/ do
-  @page.input #Now this scenario begins the final given
+  @page.input
 end
 
 Then /^It will display "jdenen@cscc.edu" in the match-result field$/ do
-  expect(match_string).to include ("jdenen@cscc.edu") #
+  expect(match_string).to include ("jdenen@cscc.edu")
 end
 
 Then /^It will display "1. jdenen" in the match-groups field$/ do
